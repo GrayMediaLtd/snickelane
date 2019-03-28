@@ -1,0 +1,8 @@
+Deployer: Will Rossiter <will@fullscreen.io>
+Ref: remotes/origin/master
+commit b3e238f6e7a09bc8519bd7a620a492070ea93602
+Author: Will Rossiter <will@fullscreen.io>
+Date:   Fri Aug 17 10:26:52 2018 +1200
+
+    Force SSL on prod
+
