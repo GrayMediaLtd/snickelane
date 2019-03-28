@@ -1,0 +1,29 @@
+.textbox-horizontal-rounded {
+    .nav-tabs {
+        margin-bottom: 21px;
+        border: 0;
+        text-align: center;
+
+        .nav-item {
+            display: inline-block;
+            float: none;
+            margin-left: -4px;
+
+            .nav-link {
+                border-radius: 2px;
+            }
+        }
+
+        .active .nav-link, .active.nav-link {
+            background-color: $brand-third;
+            color: #fff;
+            border: 0;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .nav-tabs .nav-item {
+            width: 100%;
+        }
+    }
+}

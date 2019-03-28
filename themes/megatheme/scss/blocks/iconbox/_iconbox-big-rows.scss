@@ -1,0 +1,15 @@
+.iconbox-big-row {
+    padding-top: $spacer-y * 3;
+    padding-bottom: $spacer-y * 3;
+    .detail {
+        margin-right: 100px;
+    }
+
+    .iconbox-icon {
+        float: right;
+    }
+
+    &:nth-child(even) {
+        background-color: $gray-lighter;
+    }
+}

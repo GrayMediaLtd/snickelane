@@ -1,0 +1,22 @@
+.bx-color {
+    .bx-inner {
+        padding: ($spacer-y * 3) $spacer-x;
+    }
+
+    .bx-title {
+        font-size: $font-size-h6;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .icon {
+        width: 55px;
+        float: left;
+        font-size: $font-size-base * 2;
+    }
+
+    .detail {
+        margin-left: 55px;
+    }
+}

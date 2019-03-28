@@ -1,0 +1,46 @@
+Image:
+  belongs_many_many:
+    Pages: Page
+ImageBox:
+  belongs_many_many:
+    FlexBlocks: FlexBlock_ImageBox
+WorkBox:
+  belongs_many_many:
+    FlexBlocks: FlexBlock_WorkBox
+IconBox:
+  belongs_many_many:
+    FlexBlocks: FlexBlock_IconBox
+TextBox:
+  belongs_many_many:
+    FlexBlocks: FlexBlock_TextBox
+Testimonial:
+  belongs_many_many:
+    FlexBlocks: FlexBlock_Testimonial
+Banner:
+  belongs_many_many:
+    FlexBlocks: FlexBlock_Banner
+TbtButton:
+  has_one:
+    Banner: Banner
+    PricingPackage: PricingPackage
+    FlexBlockC2A: FlexBlock_CallToAction
+Client:
+  belongs_many_many:
+    FlexBlocks: FlexBlock_Client
+PricingPackage:
+  has_many:
+    Buttons: TbtButton
+  belongs_many_many:
+    FlexBlocks: FlexBlock_PricingTable
+SocialNetwork:
+  has_one:
+    StaffMember: StaffMember
+    SiteConfig: SiteConfig
+StaffMember:
+  has_many:
+    Networks: SocialNetwork
+  belongs_many_many:
+    FlexBlocks: FlexBlock_StaffMember
+Faq:
+  belongs_many_many:
+    FlexBlocks: FlexBlock_Faq

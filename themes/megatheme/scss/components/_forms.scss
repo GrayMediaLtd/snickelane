@@ -1,0 +1,240 @@
+.form-control{
+	&.required, &.error{
+		border: 1px solid $alert-danger-border;
+		margin-bottom: 3px;
+	}
+}
+
+/**
+ * Form
+ */
+form{
+	.message{
+		padding: 3px 8px;
+		font-weight: normal;
+		font-size: 80%;
+		
+		&.required, &.error{
+			@include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
+		}
+	}
+	
+    fieldset{
+        > .field{
+            margin-bottom: 15px;
+			
+			> label{
+				font-weight: 700;
+			}
+        }
+        
+        > .checkbox{
+            > .middleColumn{
+                > input{
+                    margin-left: 0;
+                    position: static;
+                    display: inline-block;
+                }
+                
+                > label{
+                    font-weight: normal;
+                    padding-left: 0;
+                    float: none;
+                }
+            }
+        }
+        
+        > .optionset{
+            > legend{
+                font-size: $font-size-base;
+                line-height: $line-height-base;
+                border: none;
+                color: $body-color;
+				font-weight: 700;
+            }
+            
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                
+                li{
+                    padding: 0;
+                    margin: 0;
+                    
+                    label{
+                        font-weight: normal;
+                    }
+                }
+            }
+            
+            input.checkbox, input.radio{
+                display: inline-block;
+            }
+        }
+    }
+    
+    .middleColumn{
+        > span.message{
+            display: block;
+        }
+        
+        > .message{
+			&.error{
+                color: $btn-danger-color;
+                background: $btn-danger-bg;
+                border: 1px solid $btn-danger-border;
+            }
+        }
+    }
+}
+
+/**
+ * Input group
+ */
+.input-group-addon{
+	button[type="submit"], input[type="submit"]{
+		margin: 0;
+		padding: 0;
+		border: none;
+		background: transparent;
+		color: inherit;
+	}
+	
+	&.primary{
+		color: $btn-primary-color;
+		background: $btn-primary-bg;
+		border-color: $btn-primary-border;
+	}
+	
+	&.success{
+		color: $btn-success-color;
+		background: $btn-success-bg;
+		border-color: $btn-success-border;
+	}
+	
+	&.info{
+		color: $btn-info-color;
+		background: $btn-info-bg;
+		border-color: $btn-info-border;
+	}
+	
+	&.warning{
+		color: $btn-warning-color;
+		background: $btn-warning-bg;
+		border-color: $btn-warning-border;
+	}
+	
+	&.danger{
+		color: $btn-danger-color;
+		background: $btn-danger-bg;
+		border-color: $btn-danger-border;
+	}
+}
+
+/**
+ * reCaptcha field
+ */
+.g-recaptcha > div{
+	width: auto !important;
+	
+	> div {
+		width: inherit !important;
+		position: relative;
+		display: block;
+		padding: 0;
+		overflow: hidden;
+		max-width: 300px;
+		min-height: 78px;
+		border-right: 1px solid #d3d3d3;
+		border-radius: 4px;
+		box-shadow: 2px 0px 4px -1px rgba(0,0,0,.08);
+		-webkit-box-shadow: 2px 0px 4px -1px rgba(0,0,0,.08);
+		-moz-box-shadow: 2px 0px 4px -1px rgba(0,0,0,.08);
+		
+		iframe {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+		
+		> div {
+			position: relative;
+			
+			&:before {
+				content: 'Loading captcha...';
+				position: absolute;
+				top: 38%;
+				left: 0;
+			}
+		}
+		
+		&:empty:before {
+			content: 'Something went wrong!';
+		}
+	}
+}
+
+/**
+ * General search form
+ */
+.search-form{
+	position: relative;
+	
+	.action{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+.bottom-search-form{
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+/**
+ * Member login form
+ */
+.login-wrapper{
+	.section-title, .primary-content{
+		margin-bottom: 25px;
+	}
+	
+	#ForgotPassword{
+		margin-top: 15px;
+		text-align: right;
+	}
+	
+	input[type="submit"]{
+		display: block;
+		width: 100%;
+	}
+}
+
+/**
+ * Member register form
+ */
+.register-wrapper{
+	.section-title, .primary-content{
+		margin-bottom: 25px;
+	}
+	
+	input[type="submit"]{
+		display: block;
+		width: 100%;
+	}
+}
+
+/**
+ * Contact form
+ */
+.Contact_Message{
+	textarea{
+		max-height: 100px;
+	}
+}

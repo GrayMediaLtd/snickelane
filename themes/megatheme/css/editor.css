@@ -1,0 +1,51 @@
+/**
+ * This support file is used to style the WYSIWYG editor in the CMS
+ */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,400i,500,500i,700');
+@import "typography.css";
+
+body.mceContentBody, td, pre{
+	color: #666666;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    line-height: 1.42857;
+}
+
+body.typography-black{
+	background: #000;
+}
+
+/**
+ * Short codes
+ */ 
+.content-splitter{
+	background: #f9edbe url('../images/content-splitter-bg.png') no-repeat center;
+    border: 1px solid #f0c36d;
+    display: table;
+    font-size: 90%;
+    line-height: 1;
+    margin: 0 auto;
+    padding: 6px 0 !important;
+    text-align: center;
+    width: 100%;
+	max-width: 100%;
+	color: #222;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	cursor: none;
+}
+
+/**
+ * Shortcode wrapper
+ */
+.shortcode-wrapper{
+    background: #FFF;
+    border: 3px dotted #ffa500;
+    padding: 10px 15px;
+    margin-bottom: 1.15385em;
+	font-size: 10px;
+}
+
+.shortcode-divider,
+.shortcode-wrapper {
+    display: block !important;
+}

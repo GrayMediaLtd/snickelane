@@ -1,0 +1,9 @@
+.iconbox-squares {
+    padding: $spacer * 1.5;
+    text-align: center;
+    background-color: $gray-lighter;
+
+    .iconbox-icon {
+        margin-bottom: $spacer;
+    }
+}

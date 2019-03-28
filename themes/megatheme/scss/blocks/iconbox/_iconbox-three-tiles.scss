@@ -1,0 +1,34 @@
+.iconbox-compact-circle {
+    text-align: center;
+    padding: 32px;
+    background-color: #fff;
+
+    &:hover {
+        background-color: $brand-first;
+        color: #fff;
+
+        a {
+            color: #fff;
+
+            &:hover,
+            &:focus {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .iconbox-icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 100px;
+        text-align: center;
+        font-size: 25px;
+        border: 1px solid $gray-lightest;
+        display: inline-block;
+
+        .fa {
+            font-size: 24px;
+        }
+    }
+}

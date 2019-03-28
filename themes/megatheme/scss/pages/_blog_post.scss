@@ -1,0 +1,374 @@
+.entry-title{
+	margin-top: 0;
+}
+
+.entry-thumbnail{
+	margin-bottom: 25px;
+}
+
+article.v2 {
+    margin-bottom: 25px;
+
+    .entry-date {
+        color: $brand-third;
+        float: left;
+        font-weight: 700;
+        text-align: center;
+        line-height: 20px;
+        padding: 18px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        border: 2px solid $brand-third;
+        width: 75px;
+        height: 75px;
+
+        span {
+            display: block;
+        }
+    }
+
+    .entry-content {
+        margin-left: 95px;
+
+        a {
+            color: #4c4c4c;
+        }
+    }
+}
+
+.block-blog {
+    padding-bottom: 0;
+
+    .hentry {
+        padding-bottom: 40px;
+
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    }
+
+    .entry-meta {
+        padding-bottom: 1.25rem;
+        font-size: .95rem;
+    }
+}
+
+.blog-v2 {
+    .site-content {
+        background-color: $gray-lighter;
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+
+    .hentry {
+        padding-bottom: 0;
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+        position: relative;
+        margin-bottom: 75px;
+    }
+
+    .entry-header {
+        padding: 25px 50px 0 50px;
+    }
+
+    .entry-content {
+        padding: 0 50px 50px 50px;
+    }
+	
+	.posted-on{
+		a.date-circle{
+			display: none;
+		}
+		
+		span {
+			&.hidden-date{
+				display: block;
+			}
+		}
+	}
+
+    .pagination {
+        margin-bottom: 0;
+
+        > li > a, > li > span {
+            margin-left: 10px;
+            border-radius: 3px;
+        }
+    }
+	
+	@include media-breakpoint-up(md) {
+		.posted-on {
+			display: table;
+			position: absolute;
+			top: 10px;
+			left: -100px;
+	
+			a.date-circle {
+				background-color: $brand-third;
+				color: #fff;
+				border-radius: 50%;
+				width: 70px;
+				height: 70px;
+				display: block;
+				text-align: center;
+				line-height: 1;
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+				vertical-align: middle;
+				display: table-cell;
+			}
+	
+			.day {
+				font-weight: bold;
+				font-size: 20px;
+			}
+	
+			span {
+				display: block;
+				
+				&.hidden-date{
+					display: none;
+				}
+			}
+		}
+		
+		.block-blog {
+			border-left: 1px solid $gray-light;
+			padding-left: 65px;
+			margin-left: 35px;
+			margin-bottom: 75px;
+		}
+	}
+}
+
+.blog-v3 {
+    .hentry {
+        padding-bottom: 0;
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+        position: relative;
+        margin-bottom: 75px;
+    }
+
+    .entry-title {
+        font-size: 30px;
+    }
+
+    .entry-header {
+        padding: 0 30px 10px 30px;
+    }
+
+    .entry-content {
+        padding: 0 30px 10px 30px;
+    }
+
+    .entry-meta {
+        padding: 0 30px 30px 30px;
+    }
+
+    .pagination {
+        margin-bottom: 0;
+
+        > li > a, > li > span {
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+    }
+}
+
+.blog-header {
+    padding: 100px 0;
+    color: #fff;
+
+    .blog-title {
+        color: #fff;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+
+        > li > a {
+            width: 50px;
+            height: 50px;
+            line-height: 45px;
+            border-width: 2px;
+            font-size: 22px;
+        }
+    }
+}
+
+.layout-Blog-Blog_Home{
+	.has-transparent-header + .page-header{
+		padding-bottom: 120px;
+	}
+
+	.entry-thumbnail{
+		margin-bottom: 0;
+	}
+}
+
+.blog-v4 {
+    .entry-thumbnail {
+        position: relative;
+    }
+
+    .entry-header, .entry-footer, .entry-content {
+        text-align: center;
+    }
+
+    .entry-title {
+
+        font-size: 2rem !important;   
+
+    }
+
+    .posted-on {
+        display: table;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        a {
+            background-color: $brand-third;
+            color: #fff;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            display: block;
+            text-align: center;
+            line-height: 1;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+        .day {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        span {
+            display: block;
+        }
+    }
+}
+
+.hentry-v2 {
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 35px;
+
+    .entry-header {
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-bottom: 0;
+        padding: 35px;
+        padding-bottom: 0;
+
+        .entry-title {
+            font-size: 20px;
+            margin: 0;
+        }
+    }
+
+    .entry-content {
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-top: 0;
+        padding: 35px;
+        padding-top: 15px;
+    }
+
+    .posted-on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $brand-third;
+        color: #fff;
+        display: inline-block;
+        padding: 15px;
+        text-align: center;
+        line-height: 1;
+
+        span {
+            display: block;
+        }
+
+        .day {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+}
+
+.post-meta {
+    margin-bottom: 15px;
+
+    span {
+        margin-right: 5px;
+    }
+}
+
+.blogTagCloud{
+	font-size: 15px;
+}
+
+.tagCount10 {
+  font-size: 140%;
+}
+
+.tagCount9 {
+  font-size: 135%;
+}
+
+.tagCount8 {
+  font-size: 130%;
+}
+
+.tagCount7 {
+  font-size: 125%;
+}
+
+.tagCount6 {
+  font-size: 120%;
+}
+
+.tagCount5 {
+  font-size: 115%;
+}
+
+.tagCount4 {
+  font-size: 110%;
+}
+
+.tagCount3 {
+  font-size: 105%;
+}
+
+.tagCount2 {
+  font-size: 90%;
+}
+
+.tagCount1 {
+  font-size: 80%;
+}
+
+.blog-authors{
+	img {
+		max-width: 100%;
+	}
+	.author-name{
+		font-size: 18px;
+		line-height: 1;
+		margin: 0 0 10px;
+	}
+
+	.blog-author{
+		margin-bottom: 20px;
+
+		&:last-child{
+			margin-bottom: 40px;
+		}
+	}
+}

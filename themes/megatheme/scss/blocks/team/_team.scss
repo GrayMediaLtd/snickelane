@@ -1,0 +1,106 @@
+.tm-member {
+    margin-bottom: $spacer-y / 2;
+
+    .member-pic {
+        max-width: 100%;
+    }
+
+    .member-name {
+        font-size: $font-size-lg;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .member-ccupation {
+        font-size: $font-size-base;
+        color: #fff;
+    }
+
+    &:hover .overlay {
+        opacity: 0.5;
+    }
+}
+
+@import "team-social";
+@import "team-flip";
+@import "team-slider";
+
+.person {
+    margin-bottom: $spacer-y / 2;
+
+    img {
+        max-width: 100%;
+    }
+
+    .person-thumb {
+        margin-bottom: $spacer-y / 2;
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+            background-color: $brand-third;
+            position: absolute;
+            content: " ";
+            display: block;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            -webkit-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            opacity: 0;
+        }
+
+        .person-v2 & {
+            border-radius: 50%;
+
+            &::after {
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .person-detail {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        padding: 0 $spacer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        color: #fff;
+    }
+
+    .img-circle {
+        display: inline-block;
+    }
+
+    .name {
+        font-weight: 900;
+        margin-bottom: 5px;
+    }
+
+    &:hover {
+        .person-thumb {
+            &:after {
+                opacity: 0.8;
+            }
+        }
+
+        .person-detail {
+            bottom: 50%;
+            opacity: 1;
+            -webkit-transform: translateY(50%);
+            -moz-transform: translateY(50%);
+            transform: translateY(50%);
+        }
+    }
+
+    .social-icons .fa {
+        color: #fff !important;
+    }
+}

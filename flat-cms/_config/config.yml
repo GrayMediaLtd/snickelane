@@ -1,0 +1,36 @@
+---
+Name: toastflatcms
+After: 'framework/*','cms/*'
+---
+LeftAndMain:
+  cms_style_tinymce: true
+  extra_requirements_css:
+    - flat-cms/styles/css/style.css
+  extensions:
+    - FlatCMSLeftAndMainExtension
+
+SiteConfig:
+  extensions:
+    - FlatCMSSiteConfigExtension
+
+CMSPagesController:
+  icon: pages
+
+AssetAdmin:
+  icon: crop_original
+
+ReportAdmin:
+  icon: insert_chart
+
+SecurityAdmin:
+  icon: people
+
+CMSSettingsController:
+  icon: settings
+
+KickAssets:
+  icon: folder_open
+  menu_title: Browse Files
+
+MenuAdmin:
+  icon: view_list

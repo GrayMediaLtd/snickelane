@@ -1,0 +1,36 @@
+.ct-img-left {
+    .image {
+        padding: 0;
+        background-size: cover;
+    }
+
+    .content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+        min-height: 480px;
+        display: table;
+        width: 100%;
+
+        .image,
+        .content  {
+            display: table-cell;
+            vertical-align: middle;
+            float: none !important;
+        }
+
+        .container {
+            padding: $spacer;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .image {
+            min-height: 200px;
+        }
+        .content {
+            padding: ($spacer-y / 2) 0;
+        }
+    }
+}

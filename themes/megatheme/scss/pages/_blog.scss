@@ -1,0 +1,118 @@
+@import "blog_post";
+@import "blog_comments";
+
+body.page-type-Blog, .page-type-BlogPost{
+	.block-blog{
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+}
+
+.blog-infinitelist,
+.blog-listing {
+	img {
+		max-width: 100%;
+	}
+}
+
+.posts-grid {
+	.blog-post-summary,
+	.entry-title,
+	.home-blog-post-summary,
+	.post-meta {
+		margin-top: $spacer / 2;
+		margin-bottom: 0;
+	}
+}
+
+.carousel-grid {
+	.post {
+        position: relative;
+		border: 1px solid $gray-lighter;
+		background-color: #fff;
+        text-align: center;
+
+        .entry-thumbnail {
+            margin-bottom: $spacer / 2;
+        }
+
+		.entry-footer,
+		.entry-header,
+		.entry-summary {
+			padding-left: $spacer * 1.5;
+			padding-right: $spacer * 1.5;
+            margin-bottom: $spacer / 2;
+		}
+
+        .post-meta {
+            margin: 0;
+        }
+
+		.post-date {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: $brand-third;
+			color: #fff;
+			display: inline-block;
+			padding: 15px;
+			text-align: center;
+            line-height: 1;
+		}
+
+        .month,
+        .day,
+        .year {
+            display: block;
+            font-size: $font-size-sm;
+        }
+
+        .day {
+            font-size: $font-size-h3;
+            font-weight: bold;
+        }
+	}
+}
+
+.posts-fluid-grid,
+.posts-fixed-grid {
+    .post {
+		border: 1px solid $gray-lighter;
+		background-color: #fff;
+        margin-right: -1px;
+
+        .entry-thumbnail {
+            margin-bottom: $spacer / 2;
+        }
+
+		.entry-footer,
+		.entry-header {
+			margin-left: $spacer;
+			margin-right: $spacer;
+            margin-bottom: $spacer / 2;
+		}
+
+        .entry-header {
+            border-bottom: 1px solid $gray-lighter;
+            margin-bottom: $spacer;
+            padding-bottom: $spacer;
+
+            .entry-title {
+                font-size: $font-size-lg;
+            }
+        }
+
+        .post-meta {
+            margin: 0;
+            font-size: $font-size-sm;
+        }
+	}
+}
+
+.blog-sidebar{
+	@include media-breakpoint-down(sm) {
+		margin-top: $spacer-y;
+		padding-top: $spacer-y;
+		border-top: 1px solid $gray;
+	}
+}

@@ -1,0 +1,26 @@
+.ct-img-bg,
+.ct-norm {
+    text-align: center;
+}
+
+.ct-img-bg {
+    color: #fff;
+
+    h2 {
+        color: #fff;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .ct-img-left {
+        .row  {
+            display: table;
+            width: 100%;
+
+            .col-md-6 {
+                display: table-cell;
+                float: none;
+            }
+        }
+    }
+}

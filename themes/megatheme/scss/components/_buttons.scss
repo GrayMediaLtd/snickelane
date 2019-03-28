@@ -1,0 +1,39 @@
+// layout
+.btn-rounded {
+	border-radius: 1000px!important;
+    padding-left: $btn-padding-x * 1.5;
+    padding-right: $btn-padding-x * 1.5;
+}
+
+// normal
+.btn-brand-second {
+  @include button-variant(#fff, $brand-second, $brand-second);
+}
+
+.btn-brand-third {
+  @include button-variant(#fff, $brand-third, $brand-third);
+}
+
+// outline
+.btn-outline-brand-second {
+  @include button-outline-variant($brand-second);
+}
+
+.btn-outline-brand-third {
+  @include button-outline-variant($brand-third);
+}
+
+.btn-outline-brand-white {
+  @include button-outline-variant(#fff);
+  
+  &:hover,&:focus{
+	color: $brand-third;
+  }
+}
+
+// responsive
+@include media-breakpoint-down(sm) {
+	.btn-block-sm{
+		display: block;
+	}
+}

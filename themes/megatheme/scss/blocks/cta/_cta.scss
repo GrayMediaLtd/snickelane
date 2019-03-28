@@ -1,0 +1,146 @@
+.fbcta{
+	position: relative;
+    width: auto;
+    //margin: $spacer-y 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	.sc-image{
+		margin: 0;
+		
+		.caption{
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+	
+	.typography{
+		img{
+			border: none;
+			border-radius: 0;
+		}
+	}
+}
+
+.fbcta-row{
+	display: table;
+	width: calc(100% + 30px);
+	
+	> div{
+		display: table-cell;
+		vertical-align: middle;
+		float: none;
+	}
+	
+	@include media-breakpoint-down(md) {
+		display: block;
+		width: auto;
+		
+		> div{
+			display: block;
+			width: auto;
+		}
+	}
+}
+
+.fbcta-contents{}
+
+.fbcta-buttons{
+	.btn{
+		margin-bottom: $spacer-y / 2;
+		
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	
+	@include media-breakpoint-down(md) {
+		margin-top: $spacer-y;
+		text-align: center !important;
+		
+		.btn{
+			display: block;
+		}
+	}
+}
+
+.fbcta-button-align-right{
+	.fbcta-buttons{
+		text-align: right;
+	}
+}
+
+.fbcta-button-align-center{
+	.fbcta-buttons{
+		text-align: center;
+	}
+}
+
+.fbcta-default{
+	border-top: 1px solid $gray-light;
+    border-bottom: 1px solid $gray-light;
+}
+
+.fbcta-success{
+	border-color: $state-success-border;
+	background-color: $state-success-bg;
+	
+	*{
+		color: $state-success-text;
+	}
+}
+
+.fbcta-info{
+	border-color: $state-info-border;
+	background-color: $state-info-bg;
+	
+	*{
+		color: $state-info-text;
+	}
+}
+
+.fbcta-warning{
+	border-color: $state-warning-border;
+	background-color: $state-warning-bg;
+	
+	*{
+		color: $state-warning-text;
+	}
+}
+
+.fbcta-danger{
+	border-color: $state-danger-border;
+	background-color: $state-danger-bg;
+	
+	*{
+		color: $state-danger-text;
+	}
+}
+
+.fbcta-light-text{
+	*{
+		color: $gray-lightest;
+	}
+}
+
+.fbcta-button-left{
+	.fbcta-buttons{
+		@include media-breakpoint-down(md) {
+			margin-bottom: $spacer-y;
+			margin-top: 0;
+		}
+	}
+}
+
+.fbcta-button-bottom{
+	.fbcta-buttons{
+		margin-top: 0;
+		
+		.btn{
+			margin-bottom: 0;
+			margin-top: $spacer-y / 2;
+		}
+	}
+}

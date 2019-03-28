@@ -1,0 +1,14 @@
+.testimonial-default {
+    margin-bottom: $spacer-y / 2;
+    text-align: center;
+
+    cite {
+        display: block;
+        font-size: 75%;
+    }
+
+    .img-circle,
+    header {
+        margin-bottom: 10.5px;
+    }
+}

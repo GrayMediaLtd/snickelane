@@ -1,0 +1,153 @@
+@import "bootstrap/variables";
+@import "bootstrap/custom";
+@import "bootstrap/mixins";
+
+@import "blocks/blocks";
+@import "blocks/box/box";
+@import "blocks/team/team";
+@import "blocks/content/content";
+@import "blocks/testimonial/testimonial";
+@import "blocks/contact/contact";
+@import "blocks/cta/cta";
+@import "blocks/client/client";
+@import "blocks/iconbox/iconbox";
+@import "blocks/textbox/textbox";
+@import "blocks/map/map";
+@import "blocks/pricing/pricing";
+@import "blocks/portfolio/portfolio";
+@import "blocks/login";
+@import "blocks/workbox/workbox";
+
+@import "components/social-icons";
+@import "components/panels";
+@import "components/timeline";
+@import "components/page-header";
+@import "components/headings";
+@import "components/buttons";
+@import "components/forms";
+@import "components/tables";
+@import "components/sidebars";
+@import "components/common.scss";
+
+@import "navbar/navbar";
+@import "banners/banner";
+
+@import "footers/footers";
+
+@import "pages/general";
+@import "pages/blog";
+@import "pages/retailer";
+
+html {
+	background: #0c0c0c;
+}
+
+body{
+	font-size: 14px;
+	line-height: 19px;
+	background: #0c0c0c;
+}
+
+#page {
+	background: #fff;
+}
+
+a{
+	outline: none !important;
+}
+
+.btn-lg, .btn-group-lg > .btn{
+	font-size: 16px;
+	line-height: 1;
+}
+
+.sitemap{
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+
+	a{
+		&:hover, &:focus{
+			color: $brand-first;
+		}
+	}
+
+	ul{
+		> li{
+			margin-bottom: .3rem;
+
+			> a{
+				font-size: 1.1em;
+			}
+		}
+	}
+}
+
+.sitemap-heading{
+	font-size: 1.5em;
+	margin-top: 1rem;
+}
+
+.btn {
+	font-weight: 900;
+}
+
+.btn-primary {
+	background: #0c0c0c;
+	border-color: #0c0c0c;
+
+	&:hover,
+	&:focus {
+		background: #0c0c0c;
+	}
+}
+
+
+.instagram-default {
+	.h3 {
+		font-weight: 900;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		margin-top: 10px;
+
+		a {
+			color: #ff0000;
+		}
+	}
+
+	.insta-photo {
+		img {
+			width: 100%;
+		}
+
+		a {
+			display: block;
+		}
+	}
+
+	a {
+		cursor: pointer;
+	}
+}
+
+
+#instafeed {
+	display: flex;
+	min-height: 250px;
+}
+
+#instafeed.loading {
+	background: url(../images/ajax-loader.gif) no-repeat center center;
+}
+
+
+@media screen and (max-width: 892px) {
+	.instagram-default {
+		.insta-photo {
+			width: 50%;
+		}
+	}
+
+	#instafeed {
+		flex-wrap: wrap;
+	}
+}

@@ -1,0 +1,20 @@
+@import "testimonial-company";
+@import "testimonial-default";
+@import "testimonial-grid";
+@import "testimonial-single";
+@import "testimonial-multiple";
+
+.tes-single,
+.tes-multi,
+.testi-comp {
+    font-family: $font-family-serif;
+    border-left: 0;
+    font-size: $font-size-h4;
+
+    footer {
+        text-transform: uppercase;
+        font-size: $font-size-sm;
+        font-family: $font-family-base;
+        font-weight: 900;
+    }
+}

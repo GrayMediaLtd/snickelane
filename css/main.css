@@ -1,0 +1,274 @@
+/* CSS styles */
+
+/* Fonts *
+@import url('https://fonts.googleapis.com/css?Cabin+Condensed:600,700');
+@import url('https://fonts.googleapis.com/css?PT+Serif');
+/*
+	font-family: 'Cabin Condensed', sans-serif;
+	font-family: 'PT Serif', serif;
+*/
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #fff;
+    font-family: 'PT Serif', serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+html, body{
+    width:100%;
+    height:100%;
+}
+
+body {
+    font-size:62.5%;
+    line-height: 1.3rem;
+    background-color: #000;
+    margin: 0;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+    margin:0;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+.clear{
+	clear: both;
+}
+
+nav,
+header,
+div,
+section,
+article,
+#main,
+#wrapper{
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+#wrapper{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+h2{
+	font-family: 'Cabin Condensed', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	border-bottom: 5px solid #fff;
+	padding: 8px 0;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	display: inline-block;
+	margin: 10% 12% 0;
+	line-height: 2rem;
+}
+@media only screen and (min-width: 480px) {
+	h2{
+		padding: 4px 0;
+		font-size: 3.0rem;
+		line-height: 3rem;
+	}
+}
+/*padding: 24px 0;*/
+@media only screen and (min-width: 1024px) {
+	h2{
+		margin: 17% 12% 0;
+	}
+}
+h3{
+	font-family: 'Cabin Condensed', sans-serif;
+	color: #df8613;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	margin: 0 0 35px 0;
+}
+@media only screen and (min-width: 480px) {
+	h3{
+		font-size: 1.4rem;
+		line-height: 1.8rem;
+	}
+}
+
+
+header{
+	position: relative;
+	background-image: url('../img/snickleLane.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 52%;
+}
+header img{
+	width: 100%;
+	height: auto;
+}
+#cta{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 0.6rem;
+}
+#cta a{
+	transition: all 0.3s ease;
+	display: inline-block;
+	background-color: #fff;
+	color: #000;
+	font-size: 0.8rem;
+	padding: 3px;
+	margin: 5px 0;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	width: 85px;
+	float: right;
+}
+#cta a:hover{
+	background-color: #000;
+	color: #fff;
+}
+@media only screen and (min-width: 480px) {
+	#cta{
+		font-size: 0.8rem;
+	}
+	#cta a{
+		font-size: 1rem;
+		padding: 5px 8px;
+	}
+}
+section#first{
+	background-image: url('../img/banner.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 100%;
+	text-align: center;
+}
+
+section#second{
+	background-color: #a11715;
+	width: 100%;
+	background-image: url('../img/Snickel_Lane_stamp.jpg');
+	background-repeat: no-repeat;
+	background-size: 300px 302px;
+	background-position: -8% -23%;
+}
+@media only screen and (min-width: 480px) {
+	section#second{
+		background-position: -8% -46%;
+	}
+}
+section#second div.contained{
+	text-align: center;
+	padding: 58px 20px;
+	width: 100%;
+	max-width: 725px;
+	margin: 0 auto;
+	font-size: 1.1rem;
+	line-height: 2rem;
+}
+@media only screen and (min-width: 480px) {
+	section#second div.contained{
+		font-size: 1.3rem;
+	}
+}
+#ctaArgosy{
+	position: relative;
+	margin: 15px 0 0 0;
+	background-color: #a11715;
+	height: 62px;
+}
+#ctaArgosy a{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 25px;
+	background-image: url('../img/Argosy.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0 0;
+	width: 35px;
+	height:48px;
+	text-indent: -9999px;
+}
+
+.aspectContent{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.aspectRatio16by9{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 48.25%;
+}
+.aspectRatio35{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding-bottom: 90.25%;	
+}
+@media only screen and (min-width: 430px) {
+	.aspectRatio35{
+		padding-bottom: 70.25%;
+	}
+}
+@media only screen and (min-width: 600px) {
+	.aspectRatio16by9{
+		padding-bottom: 30.25%;
+	}
+}
+@media only screen and (min-width: 640px) {
+	.aspectRatio35{
+		padding-bottom: 45.25%;
+	}
+}
+@media only screen and (min-width: 800px) {
+	.aspectRatio35{
+		padding-bottom: 35.25%;
+	}
+}

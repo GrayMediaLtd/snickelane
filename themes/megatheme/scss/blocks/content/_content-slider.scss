@@ -1,0 +1,84 @@
+.content-slider {
+    .carousel .carousel-item {
+    	min-height: 300px;
+        background-size: cover;
+    }
+
+    .carousel .carousel-item .carousel-caption {
+    	position: absolute;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        text-shadow: none;
+        text-align: left;
+    }
+
+
+    .caption {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .carousel-indicators {
+        z-index: 999;
+        li {
+            border-color: $gray-dark;
+        }
+    }
+    .carousel-indicators .active {
+        background-color: $gray-dark;
+    }
+
+    .white.carousel-indicators {
+        li {
+            border-color: #fff;
+        }
+    }
+    .white.carousel-indicators .active {
+        background-color: #fff;
+    }
+
+    @include media-breakpoint-up(md) {
+        .carousel-indicators {
+            width: auto;
+            right: 5%;
+            top: 50%;
+            left: auto;
+
+            li {
+                display: block;
+            }
+        }
+
+        .carousel .carousel-item {
+        	min-height: 500px;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+
+    .delay1 {
+    	animation-delay: 1s;
+    }
+    .delay2 {
+    	animation-delay: 1.5s;
+    }
+    .delay2 {
+    	animation-delay: 2s;
+    }
+    .delay4 {
+    	animation-delay: 2.5s;
+    }
+
+    h3.caption {
+        color: #fff;
+    }
+}

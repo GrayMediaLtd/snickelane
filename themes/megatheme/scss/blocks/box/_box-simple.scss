@@ -1,0 +1,13 @@
+.bx-simple {
+    margin-bottom: 0 !important;
+    border: 1px solid $gray-lighter;
+    .bx-inner {
+        padding: ($spacer-y * 3) $spacer-x;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .no-gutter .bx-simple + .bx-simple {
+        margin-left: -1px;
+    }
+}

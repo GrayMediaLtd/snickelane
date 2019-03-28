@@ -1,0 +1,40 @@
+/**
+ * Responsive table
+ */
+table.fluid-table{
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 15px;
+	
+	td{
+		vertical-align: top;
+		padding-bottom: 15px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+    /* Force table to not be like tables anymore */
+	table.fluid-table, 
+	table.fluid-table thead, 
+	table.fluid-table tbody, 
+	table.fluid-table th, 
+	table.fluid-table td, 
+	table.fluid-table tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	table.fluid-table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	table.fluid-table td { 
+		/* Behave  like a "row" */
+		border: none;
+		position: relative;
+		white-space: normal;
+		text-align:left;
+	}
+}

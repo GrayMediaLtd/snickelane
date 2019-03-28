@@ -1,0 +1,78 @@
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+
+.defaultSkin a.mce_shortcodes{
+	width: auto;
+	max-width: 100%;
+	cursor: pointer !important;
+}
+
+.defaultSkin a.mce_shortcodes span, .defaultSkin a.mce_shortcodes span img{
+	width: auto !important;
+	cursor: pointer !important;
+	border-radius: 3px;
+}
+
+li[class^="class-Home"] > a .jstree-pageicon {
+    background-position: 0 -48px;
+}
+
+.plw-select-page .middleColumn div.chzn-container-multi, .chzn-drop{
+	width: 90% !important;
+	max-width: 90% !important;
+}
+
+.field input.ui-autocomplete-loading{
+	background: #FFF url('../images/ajax-spinner-16.gif') no-repeat right center;
+}
+
+.ss-uploadfield.has-image-cropper-field .middleColumn{
+    max-width: 100%;
+}
+
+.cms-tree.jstree span.badge.status-menucol{
+    background: green none repeat scroll 0 0;
+    color: #fff;
+    font-size: 10px;
+    margin-left: 5px;
+    padding: 3px;
+    position: static;
+    text-transform: capitalize;
+    display: none;
+}
+
+li.class-AdvancedRecirectorPage > a .jstree-pageicon{
+	background-position: 0 -16px;
+}
+
+.middleColumn > .svg-icon-selection{
+    display: table;
+}
+
+.middleColumn > .svg-icon-selection > li{
+    padding: 0 15px 15px;
+    text-align: center;
+    min-height: 86px;
+}
+
+.middleColumn > .svg-icon-selection > li > label{
+    padding: 0;
+}
+
+#Form_Form_Files .fieldholder-small .ss-gridfield-button-reset{
+    top: -27px;
+}

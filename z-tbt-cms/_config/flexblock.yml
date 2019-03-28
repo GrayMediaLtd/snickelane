@@ -1,0 +1,85 @@
+FlexBlock:
+  templates:
+    FlexBlock_Content:
+      Image_Left: {label: 'Content & Left Image'}
+      Image_Right: {label: 'Content & Right Image'}
+      Background: {label: 'Content on Background Image'}
+      Logo: {label: 'Content & Logo'}
+      Strip: {label: 'Content Strip'}
+      Simple: {label: 'Content Simple'}
+      PageHeader: {label: 'Page Header'}
+      
+    FlexBlock_IconBox:
+      Introduction: {label: 'Introduction', label_translation_str: 'FlexBlockIconBox.TemplateIntroduction'}
+      Statistic: {label: 'Statistic', label_translation_str: 'FlexBlockIconBox.TemplateStatistic'}
+      Three_Columns: {label: 'Three columns layout', label_translation_str: 'FlexBlockIconBox.TemplateThreeCols'}
+      Three_Columns_IconLeft: {label: 'Three columns Icon Left', label_translation_str: 'FlexBlockIconBox.TemplateThreeColumnsIconLeft'}
+      Tiles: {label: 'Windows Tiles', label_translation_str: 'FlexBlockIconBox.TemplateTiles'}
+      Compact_Grid: {label: 'Compact Grid', label_translation_str: 'FlexBlockIconBox.TemplateCompactGrid'}
+      Two_Columns_Grid: {label: 'Two columns grid', label_translation_str: 'FlexBlockIconBox.TemplateTwoColumnsGrid'}
+      Squares: {label: 'Squares', label_translation_str: 'FlexBlockIconBox.TemplateSquares'}
+      Three_Columns_Grid_Circle: {label: 'Three columns grid with circle icons', label_translation_str: 'FlexBlockIconBox.ThreeColumnsGridCircle'}
+      Big_Rows: {label: 'Big Rows', label_translation_str: 'FlexBlockIconBox.TemplateBigRows'}
+      Image_Left: {label: 'Image on left side', label_translation_str: 'FlexBlockIconBox.TemplateImageLeft'}
+      Image_Right: {label: 'Image on right side', label_translation_str: 'FlexBlockIconBox.TemplateImageRight'}
+      SocialNetwork: {label: 'Social Network', label_translation_str: 'FlexBlockIconBox.TemplateSocialNetwork'}
+      
+    FlexBlock_Testimonial:
+      Grid: {label: 'Grid', label_translation_str: 'FlexBlockTestimonial.TemplateGrid'}
+      Multiple: {label: 'Multiple', label_translation_str: 'FlexBlockTestimonial.TemplateMultiple'}
+      Single: {label: 'Single', label_translation_str: 'FlexBlockTestimonial.TemplateSingle'}
+      Single_Image: {label: 'Single Background Image', label_translation_str: 'FlexBlockTestimonial.TemplateSingleImage'}
+      Company: {label: 'Company', label_translation_str: 'FlexBlockTestimonial.TemplateCompany'}
+      
+    FlexBlock_BlogPost:
+      Fluid_Grid: {label: 'Fluid Grid', label_translation_str: 'FlexBlockBlogPost.TemplateFluidGrid'}
+      Carousel_Grid: {label: 'Carousel Grid', label_translation_str: 'FlexBlockBlogPost.TemplateCarouselGrid'}
+      Grid: {label: 'Grid', label_translation_str: 'FlexBlockBlogPost.TemplateGrid'}
+      
+    FlexBlock_TextBox:
+      Simple: {label: 'Simple', label_translation_str: 'FlexBlockTextBox.TemplateSimple'}
+      Big_Heading: {label: 'Big Heading', label_translation_str: 'FlexBlockTextBox.TemplateBigHeading'}
+      One: {label: 'Four Columns with Background Color', label_translation_str: 'FlexBlockTextBox.TemplateOne'}
+      Grid: {label: 'Grid', label_translation_str: 'FlexBlockTextBox.TemplateGrid'}
+      Two_Columns: {label: 'Two columns', label_translation_str: 'FlexBlockTextBox.TemplateTwoColumns'}
+      Two_Fullwidth_Columns: {label: 'Two full width columns', label_translation_str: 'FlexBlockTextBox.TemplateTwoFullwidthColumns'}
+      Vertical_Tab: {label: 'Vertical Tabs', label_translation_str: 'FlexBlockTextBox.TemplateVerticalTab'}
+      Horizontal_Rounded_Tab: {label: 'Horizontal Rounded Tabs', label_translation_str: 'FlexBlockTextBox.TemplateHorizontalRoundedTab'}
+      
+    FlexBlock_PortfolioItem:
+      Filterable: {label: 'Filterable', label_translation_str: 'FlexBlockPortfolioItem.TemplateFilterable'}
+      
+    FlexBlock_StaffMember:
+      Compact: {label: 'Compact', label_translation_str: 'FlexBlockStaffMember.TemplateCompact'}
+      Grid: {label: 'Grid', label_translation_str: 'FlexBlockStaffMember.TemplateGrid'}
+      Circle: {label: 'Circle', label_translation_str: 'FlexBlockStaffMember.TemplateCircle'}
+      Instruction_Left: {label: 'Instruction on Left', label_translation_str: 'FlexBlockStaffMember.TemplateInstructionLeft'}
+      Social: {label: 'Social', label_translation_str: 'FlexBlockStaffMember.TemplateSocial'}
+      Flip: {label: 'Flip', label_translation_str: 'FlexBlockStaffMember.TemplateFlip'}
+      Slider: {label: 'Slider', label_translation_str: 'FlexBlockStaffMember.TemplateSlider'}
+      
+    FlexBlock_Banner:
+    FlexBlock_PageHeader:
+    FlexBlock_Faq:
+      
+    FlexBlock_ImageBox:
+      fluid: {label: 'Fluid', label_translation_str: 'FlexBlockImageBox.TemplateFluid'}
+      Stacked: {label: 'Stacked', label_translation_str: 'FlexBlockImageBox.TemplateStacked'}
+      Story: {label: 'Story', label_translation_str: 'FlexBlockImageBox.TemplateStory'}
+      
+    FlexBlock_WorkBox:
+      Three_Fullwidth_columns: {label: 'Three Full Width Columns', label_translation_str: 'FlexBlockWorkBox.TemplateThreeColumns'}
+      Two_Fullwidth_columns: {label: 'Two Full Width Columns', label_translation_str: 'FlexBlockWorkBox.TemplateTwoColumns'}
+      CaseStudy: {label: 'Two Case Study Columns', label_translation_str: 'FlexBlockWorkBox.TemplateCaseStudy'}
+      Services: {label: 'Services', label_translation_str: 'FlexBlockWorkBox.TemplateServices'}
+      
+    FlexBlock_Client:
+      Regular: {label: 'Regular', label_translation_str: 'FlexBlockClient.TemplateRegular'}
+      Strip: {label: 'Strip', label_translation_str: 'FlexBlockClient.TemplateRegular'}
+      
+    FlexBlock_CallToAction:
+      Button_Left: {label: 'Button on left side', label_translation_str: 'FlexBlockCallToAction.TemplateButtonLeft'}
+      Button_Bottom: {label: 'Button at bottom', label_translation_str: 'FlexBlockCallToAction.TemplateButtonBottom'}
+    
+    FlexBlock_UserForm:
+      Popup: {label: 'Popup', label_translation_str: 'FlexBlockUserForm.Popup'}

@@ -1,0 +1,111 @@
+.cms {
+    .ui-tabs .ui-tabs-nav .ui-state-active a {
+        border-color: transparent;
+        color: white !important;
+    }
+    .field label.right,
+    .field label.left {
+        float: none !important;
+        //width: 100% !important;
+    }
+    .field .middleColumn,
+    label.right {
+        margin-left: 0 !important;
+    }
+    label.right,
+    .description {
+        border-left: 3px solid #0073aa;
+        background: rgba(black, 0.03);
+        padding: 10px;
+        margin-top: 20px;
+        //max-width: 590px;
+        background: white;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    }
+    .field .description {
+        margin-left: 0 !important;
+    }
+    .ss-uploadfield .ss-uploadfield-item .ss-uploadfield-item-preview.ss-uploadfield-dropzone {
+        box-shadow: none;
+        border-radius: 0;
+        background: white;
+    }
+    .ss-uploadfield .ss-uploadfield-addfile.borderTop {
+        border: 0px solid transparent;
+    }
+    .ss-uploadfield-files,
+    .ss-uploadfield .ss-uploadfield-item {
+        background: white !important;
+        max-width: 580px;
+        border: 1px solid #e5e5e5 !important
+    }
+    .ss-uploadfield-files {
+        border: 0px solid transparent !important;
+    }
+    .field.urlsegment .preview {
+        margin-right: 10px;
+    }
+    .field {
+        border-bottom: 1px solid #e5e5e5;
+        border: none;
+        padding-bottom: 12px;
+    }
+    .field label.left {
+        color: #666;
+        text-shadow: none;
+        font-weight: normal;
+    }
+    .field input.text, .field textarea, .field .TreeDropdownField {
+        background: #ffffff;
+        border: 1px solid #adadae;
+        border-radius: 0;
+
+        height: 35px;
+        max-width: 100%;
+        padding: 4px 6px;
+        border: 1px solid #e5e5e5;
+        background: #fff;
+        color: #666;
+        -webkit-transition: all linear .2s;
+        transition: all linear .2s;
+        border-radius: 2px;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .field textarea {
+        height: 100px;
+    }
+    .ss-uploadfield .middleColumn {
+        //min-width: 510px;
+        //max-width: 530px;
+        //width: 100%;
+        //float: right;
+        border-radius: 0;
+        background: white;
+        border: 1px solid #e5e5e5;
+    }
+    .ss-uploadfield-files,
+    .ss-uploadfield-item {
+        //border: 1px solid #a6a6a9;
+        //border-radius: 5px;
+    }
+
+    .field input.youtube {
+        background-image: url('../../images/field-icon-youtube.png') !important;
+        background-position: 6px center !important;
+        background-repeat: no-repeat !important;
+        background-size: 28px 20px !important;
+        padding-left: 40px;
+    }
+    .input-wrap--half {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+        &--last {
+            margin-left: 2%;
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.SortableTreeMultiselectField{
+    background: #fff;
+    border-radius: 5px;
+    margin: 15px 0;
+    max-width: 480px;
+    padding: 15px;
+}
+
+.SortableTreeMultiselectField .stmsf-heading{
+    margin: 0 0 15px;
+    font-size: 15px;
+}
+
+.SortableTreeMultiselectField ul.stmsf-sortlist{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.SortableTreeMultiselectField ul.stmsf-sortlist li{
+    background: #e6eaed none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    cursor: move;
+    margin: 0 3px 5px;
+    padding: 0.4em 0.4em 0.4em 1.5em;
+    position: relative;
+}
+
+.SortableTreeMultiselectField ul.stmsf-sortlist li span{
+    position: absolute;
+    margin-left: -1.3em;
+}

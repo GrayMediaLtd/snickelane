@@ -1,0 +1,38 @@
+DataobjectShortCodeAdmin:
+  managed_models:
+    - IconBox
+  page_length: 30
+  display_fields:
+    IconBox:
+      Title: {label: 'Title', label_translation_str: 'BaseBox.Title'}
+      HTMLClasses: {label: 'Icon class', label_translation_str: 'IconBox.HTMLClasses'}
+  templates:
+    IconBox:
+      OneColumn: {label: 'One column', label_translation_str: 'IconBox.TemplateOneColumn'}
+      DarkIcon: {label: 'Dark icons', label_translation_str: 'IconBox.TemplateDarkIcon'}
+      ThreeColumns: {label: 'Three columns', label_translation_str: 'IconBox.TemplateThreeColumns'}
+###------######
+#GridFieldDataobjectShortcodeExtraFields:
+#  extensions:
+#    - TBT_GridFieldDataobjectShortcodeExtraFields_Extension
+#DataobjectShortcode:
+#  ClassNames:
+#    - Banner
+#    - BaseBox
+#  # column to display on the gridfield
+#  DisplayFields:
+#    Banner:
+#      ImageThumb: {label: 'Image', label_translation_str: 'BaseBox.Image'}
+#      Title: {label: 'Title'}
+#  # event firing on before set list into the gridfield
+#  OnBeforeSetGridFieldList:
+#    Banner: 'Banner::ShortcodeFilter'
+#  # grid field list limit
+#  ListingLimit: 30
+#  # template for displaying in the frontend
+#  # final template name is the ClassName + _ + selected value
+#  # example: if select `Light` on `Banner` class, template name will be `DataobjectShortcode_Banner_Light`
+#  Templates:
+#    Banner:
+#      Light: {label: 'Light'}
+#      Dark: {label: 'Dark', label_translation_str: 'Banner.ThemeNameDark'}

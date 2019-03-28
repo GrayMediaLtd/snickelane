@@ -1,0 +1,105 @@
+# always ?flush=1 when changing config yaml
+Director:
+  environment_type: 'dev'
+Controller:
+  extensions:
+    - TBT_Controller_Extension
+SiteConfig:
+  extensions:
+    - TBT_SiteConfig_Extension
+  header_layouts:
+    - Flat: 'Flat'
+    - Radius: 'Radius Navigation'
+    - Flat_Topbar: 'Flat + Topbar'
+    - centered: 'Centered'
+    - fullwidth: 'Full Width'
+    - semi_transparent: 'Semi Transparent'
+    - transparent: 'Transparent'
+  footer_layouts:
+    - Centered: 'Centered'
+    - With_Menu: 'With Menu'
+    - Contains_Widgets: 'Contains Widgets'
+    - With_Contacts: 'With Contacts' 
+SiteTree:
+  extensions:
+    - CommentsExtension
+    - TBT_SiteTree_Extension
+  comments:
+    nested_comments: true
+    nested_depth: 3
+    gravatar_size: 48
+Page:
+  extensions:
+    - WidgetPageExtension
+    - TBT_Page_Extension
+  disabled_cms_fields:
+    Blog: ['Content', 'Images', 'EnableHeader']
+    BlogPost: ['Images', 'EnableHeader']
+    BuildablePage: ['Content', 'Images', 'TabImages']
+    ContactPage: ['Content', 'TabImages', 'Comments']
+    HelpArticle: ['PageImage', 'Images', 'AuthorNames', 'EnableHeader']
+    HelpPage: ['Images', 'Comments', 'EnableHeader']
+    Home: ['Content', 'PageIntroduction', 'TabHeader', 'TabImages']
+    Timeline: ['Images', 'Categorisation', 'Comments', 'Sidebar']
+    TimelineEvent: ['PageImage', 'Images', 'Categories', 'Tags', 'Authors', 'AuthorNames', 'Comments', 'Sidebar']
+Page_Controller:
+  extensions:
+    - TBT_PageController_Extension
+Blog:
+  enable_widget: true
+Blog:
+  extensions:
+    - TBT_Blog_Extension
+Blog_Controller:
+  extensions:
+    - TBT_Blog_Controller_Extension
+BlogPost:
+  enable_widget: true
+  extensions:
+    - TBT_BlogPost_Extension
+  comments:
+    enabled: true
+    enabled_cms: false
+BlogPost_Controller:
+  extensions:
+    - TBT_BlogPost_Controller_Extension
+DBField:
+  extensions:
+    - TBT_DBField_Extension
+Widget:
+  extensions:
+    - TBT_Widget_Extension
+  AllowContentOn:
+    # ClassName: enable_HTMLEditorField_or_not
+    HTMLContentWidget: false
+    SubscribeFormWidget: false
+    SocialNetworkWidget: false
+HtmlEditorField_Toolbar:
+  extensions:
+    - TBT_HtmlEditorField_Toolbar_Extension
+Upload:
+  uploads_folder: 'Uploads/General'
+Injector:
+  UploadField: SelectUploadField
+CommentingController:
+  extensions:
+    - CommentSpamProtection
+FormSpamProtectionExtension:
+  default_spam_protector: NocaptchaProtector
+NocaptchaField:
+  site_key: "6Lf469ESAAAAAN__lQKxvakFFX9wRKSDpMYSIDdu"
+  secret_key: "6Lf469ESAAAAAGZGV_7g8ilz4uWptctTb1rAb8xH"
+  verify_ssl: false
+Database:
+  check_and_repair_on_build: true
+#---- Data Objects ---#
+SocialNetwork:
+  available_services:
+    facebook: 'Facebook'
+    twitter: 'Twitter'
+    google-plus: 'Google Plus'
+    behance: 'Behance'
+#---- CMS Admin ---#
+LeftAndMain:
+  extra_requirements_css:
+    - z-tbt-cms/assets/css/cms.css

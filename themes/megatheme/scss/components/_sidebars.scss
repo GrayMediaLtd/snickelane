@@ -1,0 +1,36 @@
+.widget {
+	margin-bottom: $spacer-y;
+	
+	.widget-title {
+		margin-top: 0;
+		text-transform: uppercase;
+		font-size: $font-size-base;
+		font-weight: bold;
+		color: $body-color;
+	}
+
+	ul {
+		padding-left: 0;
+		list-style: none;
+
+		li {
+			&:before {
+				font-family: 'FontAwesome';
+				content: "\f105";
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.social-icons li::before {
+		margin-right: 0;
+		content: "";
+	}
+
+	a {
+		&:hover,
+		&:focus {
+			opacity: 0.8;
+		}
+	}
+}

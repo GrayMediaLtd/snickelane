@@ -1,0 +1,19 @@
+.iconbox-win-tile {
+    margin: 0 !important;
+    text-align: center;
+    padding: 48px 0;
+    font-size: 24px;
+
+    a {
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            opacity: 0.8;
+        }
+    }
+	
+	.fa{
+		color: #FFF;
+	}
+}

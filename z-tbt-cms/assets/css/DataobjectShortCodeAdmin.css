@@ -1,0 +1,18 @@
+.gdsec-sort-handle, .gdsec-move-icon{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	line-height: 1;
+	cursor: move;
+	background: url("../images/icons/move-16.png");
+}
+
+td.col-dataobject-shortcode-col{
+	width: 60px !important;
+}
+
+.ss-gridfield-orderhelper {
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	border-top: 1px solid rgba(0, 0, 0, .1);
+	box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+}

@@ -1,0 +1,240 @@
+/**
+ * Timeline
+ */
+$timeline-line-width:           2px;
+$timeline-line-color:           #eeeeee;
+$timeline-box-border-color:     #ecf0f1;
+$timeline-box-border:           1px solid $timeline-box-border-color;
+$timeline-badge-color:          $brand-third;
+$timeline-badge-bg:             #FFF;
+$timeline-date-color:           #ededed;
+$timeline-date-bg:              #414141;
+$timeline-event-title-color:    $brand-third;
+$timeline-event-date-color:     #999;
+
+.timeline-wrapper{
+	.pagination-wrapper{
+		margin-top: 30px;
+	}
+}
+
+.timeline-sidebar{
+	margin-top: 5px;
+}
+
+.timeline {
+	list-style: none;
+	padding: 60px 0 20px;
+	position: relative;
+	margin: 0;
+
+	img {
+		max-width: 100%;
+	}
+
+	&:before {
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		content: " ";
+		width: $timeline-line-width;
+		background-color: $timeline-line-color;
+		left: 50%;
+		margin-left: -1.5px;
+	}
+
+	>li {
+		margin-bottom: 20px;
+		position: relative;
+
+		&.last{
+			margin-bottom: 80px;
+		}
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		&:before {
+			content: " ";
+			display: table;
+			content: " ";
+			display: table;
+		}
+
+		&:after {
+			content: " ";
+			display: table;
+			clear: both;
+			content: " ";
+			display: table;
+			clear: both;
+		}
+
+		>.timeline-panel {
+			width: 46%;
+			float: left;
+			border: $timeline-box-border;
+			border-radius: 2px;
+			padding: 20px;
+			position: relative;
+
+			&:before {
+				position: absolute;
+				top: 26px;
+				right: -15px;
+				display: inline-block;
+				border-top: 15px solid transparent;
+				border-left: 15px solid $timeline-box-border-color;
+				border-right: 0 solid $timeline-box-border-color;
+				border-bottom: 15px solid transparent;
+				content: " ";
+			}
+
+			&:after {
+				position: absolute;
+				top: 27px;
+				right: -14px;
+				display: inline-block;
+				border-top: 14px solid transparent;
+				border-left: 14px solid #fff;
+				border-right: 0 solid #fff;
+				border-bottom: 14px solid transparent;
+				content: " ";
+			}
+		}
+
+		>.timeline-badge {
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			font-size: 1.4em;
+			text-align: center;
+			position: absolute;
+			top: 31px;
+			left: 50%;
+			margin-left: -11px;
+			z-index: 100;
+			border-radius: 50%;
+			border: 2px solid $timeline-badge-color;
+			color: $timeline-badge-bg;
+			background: $timeline-badge-bg;
+		}
+
+		>.timeline-date{
+			color: $timeline-date-color;
+            background-color: $timeline-date-bg;
+			padding: 12px 0;
+            width: 180px;
+			line-height: 1;
+            text-align: center;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+			margin-left: -90px;
+            z-index: 100;
+			border-radius: 3px;
+		}
+	}
+
+	>li:nth-child(even) {
+		>.timeline-panel {
+			float: right;
+
+			&:before {
+				border-left-width: 0;
+				border-right-width: 15px;
+				left: -15px;
+				right: auto;
+			}
+
+			&:after {
+				border-left-width: 0;
+				border-right-width: 14px;
+				left: -14px;
+				right: auto;
+			}
+		}
+	}
+}
+
+.timeline-title {
+	margin-top: 0;
+	color: $timeline-event-title-color;
+
+	a{
+		color:  inherit;
+	}
+}
+
+.timeline-event-date{
+	color: $timeline-event-date-color;
+}
+
+.timeline-body {
+	>p {
+		margin-bottom: 0;
+		&+p {
+			margin-top: 5px;
+		}
+	}
+
+	>ul {
+		margin-bottom: 0;
+	}
+}
+
+.timeline-thumbnail{
+	margin-bottom: 15px;
+}
+@include media-breakpoint-down(md) {
+    ul.timeline {
+		&:before {
+			left: 40px;
+		}
+
+		>li {
+			>.timeline-panel {
+				float: right;
+				width: 80%;
+
+				&:before {
+					border-left-width: 0;
+					border-right-width: 15px;
+					left: -15px;
+					right: auto;
+				}
+
+				&:after {
+					border-left-width: 0;
+					border-right-width: 14px;
+					left: -14px;
+					right: auto;
+				}
+			}
+
+			>.timeline-badge {
+				left: 30px;
+				top: 32px;
+				margin-left: 0;
+			}
+
+			>.timeline-date{
+				margin-left: 0;
+				right: 0;
+				left: auto;
+			}
+		}
+	}
+}
+
+/**
+ * Timeline Event
+ */
+.tle-heading{
+	margin: 0 0 5px;
+}
+
+.tle-meta{
+	margin-bottom: 25px;
+}

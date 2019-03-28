@@ -1,0 +1,40 @@
+.iconbox-image-left {
+    padding: 0;
+
+    .header {
+        margin-bottom: $spacer-y;
+    }
+
+    @include media-breakpoint-up(md) {
+        display: table;
+        min-height: 500px;
+		
+        .image {
+            padding: 0;
+            background-size: cover;
+			display: table-cell;
+			float: none;     
+        }
+		
+        .content {
+            display: table-cell;
+            vertical-align: middle;
+            float: none !important;
+        }
+		
+        .container {
+            padding: 20px 5%;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .image {
+            min-height: 300px;
+        }
+		
+        .content {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+}

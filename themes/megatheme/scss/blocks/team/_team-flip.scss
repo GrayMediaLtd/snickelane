@@ -1,0 +1,82 @@
+.tm-flip {
+    .back .detail,
+    .front .detail,
+    .social {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        padding: $spacer;
+        left: 0;
+    }
+
+    .front .detail {
+        bottom: 0;
+        z-index: 2;
+    }
+	
+    .back {
+        .detail {
+            top: 0;
+        }
+
+        .member-pic {
+            visibility: hidden;
+        }
+    }
+
+    .social {
+        bottom: 0;
+		margin-top: 20px;
+		
+		> li{
+			> a{
+				background: #FFF;
+			}
+		}
+    }
+}
+
+.flip-container {
+	perspective: 1000px;
+}
+
+.flip-container, .front, .back {
+	height: 280px;
+}
+
+.front, .back {
+    width: 100%;
+    background-size: cover;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+    background-size: cover;
+}
+
+.back {
+	transform: rotateY(180deg);
+}
+
+@include media-breakpoint-up(md) {
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+}

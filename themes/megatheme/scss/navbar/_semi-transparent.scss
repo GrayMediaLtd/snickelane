@@ -1,0 +1,70 @@
+.semi-transparent {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    + .page-header {
+        margin-top: 62px;
+    }
+
+    &.navbar-light .navbar-nav .nav-link {
+        color: #444;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-top: $spacer-y * 1.5;
+        padding-bottom: $spacer-y * 1.5;
+
+        + .page-header {
+            margin-top: 125px;
+        }
+
+        .logo-white {
+            display: none;
+        }
+
+        &.scrolled {
+            background-color: rgba(255,255,255,0.9);
+            padding-top: $spacer-y / 2;
+            padding-bottom: $spacer-y / 2;
+
+            .navbar-brand img {
+                max-height: 35px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        background-color: #fff;
+    }
+}
+
+.header-semi_transparent{
+	&:not(.has-banner){
+		.page-header, .page-header-blank{
+			padding-top: 90px;
+			
+			@include media-breakpoint-up(lg) {
+				padding-top: 8rem;
+			}
+		}
+	}
+	
+	@include media-breakpoint-down(md) {
+        &.has-banner{
+			.page-header, .page-header-blank{
+				padding-top: 72px;
+			}
+		}
+    }
+	
+	@include media-breakpoint-up(lg) {
+		.banner-carousel{
+			.display-table{
+				padding-top: 85px; // equals the height + top padding of .navbar
+			}
+		}
+	}
+}

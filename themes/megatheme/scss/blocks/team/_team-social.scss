@@ -1,0 +1,23 @@
+.tm-social {
+    .tm-member-inner {
+        position: relative;
+        min-height: 200px;
+    }
+    .member-pic {
+        border-radius: 3px;
+    }
+
+    .detail,
+    .social {
+        position: absolute;
+        top: $spacer-y;
+        left: $spacer-x;
+        right: $spacer-x;
+        z-index: 2;
+    }
+
+    .social {
+        top: auto;
+        bottom: $spacer-y;
+    }
+}

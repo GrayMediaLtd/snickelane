@@ -1,0 +1,157 @@
+@import "sliders";
+
+.banner {
+    overflow: hidden;
+
+    .banner-inner {
+        height: 600px;
+
+        &.banner-inner-v2 {
+            padding: 0;
+            position: relative;
+
+            img {
+                position: absolute;
+                bottom: -175px;
+                right: 0;
+            }
+        }
+    }
+
+    &.banner-v1 {
+        .caption-lg {
+            font-size: 45px;
+            margin-bottom: 25px;
+            margin-top: 0;
+        }
+
+        .banner-btns {
+            margin-top: 25px;
+        }
+    }
+
+    &.banner-v2 {
+        padding-top: 50px;
+    }
+}
+
+.banner-carousel{
+    .carousel-item {
+        background-size: cover;
+    }
+
+    &, .display-table {
+        height: 500px;
+    }
+
+	.bc-heading{
+        font-size: 30px;
+		font-weight: 900;
+        letter-spacing: -1px;
+		line-height: 1;
+		margin-top: 0;
+		margin-bottom: 15px;
+		//text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+
+		[class^="caption-"] {
+			margin-bottom: 0;
+		}
+	}
+
+	.bc-subheading{
+		font-size: 16px;
+		letter-spacing: -1px;
+		margin-top: 0;
+		margin-bottom: 18px;
+		//text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+
+		[class^="caption-"] {
+			margin-bottom: 0;
+		}
+	}
+
+	.btn{
+		margin-bottom: 10px;
+	}
+
+	.bc-content{
+		margin-bottom: 15px;
+	}
+}
+
+.carousel-caption{
+	&.left{
+		.bc-heading, .bc-subheading, .bc-content, .bc-buttons{
+			text-align: left;
+		}
+	}
+
+	&.right{
+		.bc-heading, .bc-subheading, .bc-content, .bc-buttons{
+			text-align: right;
+		}
+	}
+
+	&.center{
+		.bc-heading, .bc-subheading, .bc-content, .bc-buttons{
+			text-align: center;
+		}
+	}
+}
+
+.bc-heading-default {
+	> span {
+		display: table;
+		background: #ff0000;
+        background: linear-gradient(45deg, #ff0000, #ff0052);
+		padding: 0 10px;
+        color: #fff;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+}
+
+.bc-subheading-default{
+	> span{
+		display: table;
+		background: #FFF;
+		padding: 5px 10px;
+		text-transform: none;
+		margin-bottom: 5px;
+	}
+}
+
+// responsive
+@include media-breakpoint-up(md) {
+    .banner-carousel{
+		.bc-heading{
+			font-size: 41px;
+			line-height: 1;
+		}
+
+		.bc-subheading{
+		    font-size: 18px;
+			line-height: 1;
+		}
+	}
+
+	.bc-heading-default{
+		> span{
+			padding: 0 15px;
+		}
+	}
+
+	.bc-subheading-default{
+		> span{
+			padding: 6px 15px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.banner-carousel{
+		&, .display-table {
+			height: 350px;
+		}
+	}
+}

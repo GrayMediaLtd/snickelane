@@ -1,0 +1,13 @@
+.ct-form-full {
+    .ct-strip-title {
+        border-bottom: 2px solid $brand-third;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: $font-size-h4;
+    }
+
+    .ct-form-full-header {
+        margin-bottom: $spacer-y * 3;
+    }
+}

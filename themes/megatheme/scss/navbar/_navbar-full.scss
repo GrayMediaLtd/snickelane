@@ -1,0 +1,67 @@
+.navbar-w-100 {
+	background-color: #fff;
+
+	& + .fake-navbar {
+        height: 72px;
+        display: block;
+    }
+
+	.navbar-contact {
+		color: #fff;
+	    font-size: $font-size-lg;
+		background-color: $brand-third;
+	    margin-right: -47px;
+		margin-top: -24px;
+		padding: 16px 25px;
+		
+		.display-table-cell{
+			vertical-align: middle;
+		}
+		
+		.icon{
+			padding-right: $spacer-x;
+		}
+		
+		.detail {
+			span {
+	            display: block;
+	        }
+			
+	        .contact-number {
+	            font-weight: bold;
+	        }
+		}
+	}
+	
+	&.scrolled{
+		box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+	}
+	
+	@include media-breakpoint-up(lg) {
+		padding-top: $spacer-y * 1.5;
+		padding-bottom: 2px;
+		
+		&.scrolled {
+			padding-top: $spacer-y / 2;
+			padding-bottom: $spacer-y / 2;
+			
+			.navbar-brand img {
+				max-height: 35px;
+			}
+			
+			.navbar-contact {
+				margin-top: -8px;
+				margin-bottom: -8px;
+				padding: 0 25px;
+			}
+		}
+		
+		& + .fake-navbar {
+			height: 100px;
+		}
+	}
+
+	.social-icons {
+		margin: 0 15px;
+	}
+}

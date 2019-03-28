@@ -1,0 +1,27 @@
+.ct-strip-header {
+    padding: 0 10%;
+    margin-bottom: $spacer * 3;
+
+    .ct-strip-title {
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
+
+.ct-strip-info {
+    text-align: center;
+    .icon {
+        width: $spacer * 4;
+        height: $spacer * 4;
+        border-radius: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        text-align: center;
+        line-height: $spacer * 4;
+        display: inline-block;
+        margin-bottom: $spacer;
+    }
+
+    .social > li > a {
+        border: 0;
+    }
+}

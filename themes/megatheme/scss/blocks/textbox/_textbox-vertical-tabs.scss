@@ -1,0 +1,14 @@
+.textbox-vertical-tabs {
+    .nav-link {
+        border-radius: 2px;
+        background-color: $gray-lighter;
+    }
+    .active.nav-link {
+        &,
+        &:hover,
+        &:focus {
+            background-color: $brand-third;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.bx-image {
+    a {
+        color: #fff;
+
+        &:hover {
+            color: $brand-primary;
+        }
+    }
+}

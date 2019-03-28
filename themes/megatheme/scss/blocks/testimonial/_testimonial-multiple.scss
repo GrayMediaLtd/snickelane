@@ -1,0 +1,82 @@
+.tes-multi {
+    padding: 0;
+    margin-bottom: 0;
+    display: table;
+
+    .avatar {
+        background-size: cover;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .avatar,
+        .detail {
+            display: table-cell;
+            width: 50%;
+        }
+
+        .detail {
+            padding: ($spacer * 5) 5%;
+            padding-bottom: ($spacer * 10);
+            font-weight: 100;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .detail {
+            padding: ($spacer-y / 2) 10%;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+    }
+}
+
+.carousel-multi {
+    .carousel-indicators {
+        text-align: left;
+        margin-left: 0;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        margin-bottom: $spacer-y / 2;
+        z-index: 2;
+
+        img {
+            width: $spacer * 3;
+            height: $spacer * 3;
+            border-radius: 100%;
+            opacity: 0.3;
+        }
+
+        li {
+            cursor: pointer;
+            display: inline-block;
+            text-indent: inherit;
+            width: auto;
+            height: auto;
+            border: 0;
+            background-color: transparent;
+        }
+
+        .active img {
+            opacity: 1;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .carousel-multi {
+        .carousel-indicators {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .carousel-multi {
+        .carousel-indicators {
+            margin-left: 5%;
+            margin-bottom: $spacer-y * 2;
+        }
+    }
+}

@@ -1,0 +1,672 @@
+.carousel-indicators{
+	> li{
+		border-radius: 0;
+	}
+}
+
+.carousel-controls-middle{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	left: 0;
+	top: 0;
+	
+	> div{
+		margin: 0 auto;
+		position: relative;
+		max-width: 96%;
+		height: 100%;
+	}
+	
+	.ccm-nav{
+		float: left;
+		position: relative;
+		height: 100%;
+		width: 26px;
+		background: transparent url('../images/carousel-control.png') no-repeat left center;
+		
+		&.ccm-right{
+			float: right;
+			background-position: right center;
+		}
+	}
+}
+
+.home-slider {
+    margin-top: -40px;
+    padding-top: 40px;
+    background-color: #fbfbfb;
+    background-image: -webkit-radial-gradient(circle, #fbfbfb, #dcdcdc);
+    background-image: radial-gradient(circle, #fbfbfb, #dcdcdc);
+    background-repeat: no-repeat;
+    -webkit-box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.05);
+
+    .item {
+        height: 500px;
+        overflow: hidden;
+
+        > .bg-img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+
+            > img {
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+
+    .logo-img {
+        max-width: 250px;
+        margin: 140px auto 20px;
+    }
+
+    .slogan {
+        display: inline-block;
+        margin-bottom: 30px;
+        padding: 12px 18px;
+        background: #505050;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+.fully-responsive {
+    margin-top: 140px;
+}
+
+@media (max-width: 767px) {
+    .fully-responsive {
+        margin-top: 120px;
+    }
+}
+
+.fully-responsive__title {
+    display: inline-block;
+    margin: 0 auto 10px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #505050;
+    text-transform: capitalize;
+}
+
+.fully-responsive__text {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.fully-responsive__btns {
+    margin-top: 30px;
+}
+
+.fully-responsive-btns__btn {
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.home-slider .key-features.primary {
+    margin-top: 140px;
+}
+
+.home-slider .key-features.secondary {
+    margin-top: 20px;
+}
+
+.home-slider .key-features.primary > span, .home-slider .key-features.secondary > span {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 8px 18px;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.home-slider .key-features.primary > span {
+    background: #505050;
+}
+
+.home-slider .key-features.secondary > span {
+    background: #ec7263;
+}
+
+a.carousel-arrow {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    display: block;
+    top: 50%;
+    margin-top: -25px;
+    background-color: transparent;
+    color: transparent;
+    font-size: 28px;
+    cursor: pointer;
+    -webkit-transition: background 300ms;
+    -moz-transition: background 300ms;
+    transition: background 300ms;
+}
+
+.carousel:hover a.carousel-arrow {
+    background: rgba(0, 0, 0, 0.2);
+    color: #f6f6f6 !important;
+}
+
+.carousel a.carousel-arrow:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+a.carousel-arrow:hover, a.carousel-arrow:active {
+    text-decoration: none;
+}
+
+a.carousel-arrow-prev {
+    left: 20px;
+    right: auto;
+    padding-right: 5px;
+}
+
+a.carousel-arrow-next {
+    right: 20px;
+    left: auto;
+    padding-left: 5px;
+}
+
+.g-delay_1 {
+    -webkit-animation-delay: 300ms;
+    -moz-animation-delay: 300ms;
+    animation-delay: 300ms;
+}
+
+.g-delay_2 {
+    -webkit-animation-delay: 600ms;
+    -moz-animation-delay: 600ms;
+    animation-delay: 600ms;
+}
+
+.g-delay_3 {
+    -webkit-animation-delay: 900ms;
+    -moz-animation-delay: 900ms;
+    animation-delay: 900ms;
+}
+
+.g-delay_4 {
+    -webkit-animation-delay: 1200ms;
+    -moz-animation-delay: 1200ms;
+    animation-delay: 1200ms;
+}
+
+.g-delay_5 {
+    -webkit-animation-delay: 1500ms;
+    -moz-animation-delay: 1500ms;
+    animation-delay: 1500ms;
+}
+
+.g-delay_6 {
+    -webkit-animation-delay: 1800ms;
+    -moz-animation-delay: 1800ms;
+    animation-delay: 1800ms;
+}
+
+.g-delay_7 {
+    -webkit-animation-delay: 2100ms;
+    -moz-animation-delay: 2100ms;
+    animation-delay: 2100ms;
+}
+
+.g-delay_8 {
+    -webkit-animation-delay: 2400ms;
+    -moz-animation-delay: 2400ms;
+    animation-delay: 2400ms;
+}
+
+.g-delay_9 {
+    -webkit-animation-delay: 2700ms;
+    -moz-animation-delay: 2700ms;
+    animation-delay: 2700ms;
+}
+
+.ccaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.something-semantic {
+  display: table;
+  width: 100%;
+  height: 500px;
+}
+
+.something-else-semantic {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.tscarousel {
+    overflow: hidden;
+    background-color: $brand-third;
+
+    .item {
+        background-size: cover;
+        overflow: hidden;
+        background-position: center center;
+    }
+
+    &, .display-table, .has-side-pic {
+        width: 100%;
+        height: 500px;
+    }
+
+    .carousel-caption {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 16px;
+        text-shadow: none;
+    }
+
+    h1 {
+        font-size: 52px;
+        font-weight: 700;
+    }
+
+    .btn-circle {
+        border: 2px solid #fff;
+        color: #fff;
+        width: 45px;
+        height: 45px;
+        border-radius: 50% !important;
+
+        &:hover {
+            color: $brand-primary;
+            background-color: #fff;
+        }
+    }
+
+    .has-border {
+        margin-top: 50px;
+        border: 3px solid $brand-primary;
+        display: inline-block;
+        padding: 15px;
+    }
+
+    .caption-big {
+        background-color: $brand-third;
+        display: inline-block;
+        color: #fff;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 15px 25px;
+        font-size: 35px;
+    }
+
+    .caption-small {
+        background-color: $brand-primary;
+        display: inline-block;
+        color: #fff;
+        padding: 10px 25px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .well {
+        height: 500px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 0 35px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .caption-type1 {
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 300;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        display: inline-block;
+        padding: 0 105px;
+    }
+
+    .caption-type2 {
+        font-weight: 800;
+        border: 0;
+    }
+
+    form {
+        background-color: rgba(0,0,0,0.4);
+        padding: 35px;
+    }
+
+    .facade-minimal {
+        padding: 0;
+        margin: 0;
+        padding-top: 5px;
+        margin-bottom: -5px;
+        margin-top: 50px;
+    }
+	
+	.carousel-indicators{
+		width: 100%;
+		left: 0;
+		right: 0;
+	}
+	
+	.carousel-control{
+		color: #FFF;
+		//border-color: $gray-lightest;
+		border: none;
+		width: 30px;
+		height: 30px;
+		line-height: 28px;
+		
+		&:hover, &:focus{
+			color: #FFF;
+		}
+		
+		&.left{
+			left: $spacer-x;
+			bottom: $spacer-y;
+		}
+		
+		&.right{
+			right: $spacer-x;
+			bottom: $spacer-y;
+		}
+	}
+}
+
+.no-touch{
+	.page-home .tscarousel {
+		.carousel-control{
+			display: none;
+		}
+	}
+}
+
+.has-transparent-header + .carousel.tscarousel--v2 {
+    &, .display-table, .has-side-pic {
+        height: 424px !important;
+    }
+
+    .carousel-caption {
+        padding-top: 25px;
+    }
+}
+
+// Carousel control
+.carousel-control {
+    *display: none;
+    top: 50%;
+    bottom: auto;
+    width: 52px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    margin-top: -21px;
+    font-size: 14px;
+    text-shadow: none;
+    // We can't have this transition here because WebKit cancels the carousel
+    // animation if you trip this while in the middle of another animation.
+    background-color: transparent;
+    color: $brand-primary;
+    border: 2px solid $brand-primary;
+    border-radius: 1000px;
+    // Set gradients for backgrounds
+    &.left {
+        background-image: none;
+        top: auto;
+        bottom: 0;
+        left: auto;
+        right: 54px;
+    }
+
+    &.right {
+        background-image: none;
+        top: auto;
+        bottom: 0;
+    }
+    // Hover/focus state
+    &:hover, &:focus {
+        color: $brand-primary;
+        cursor: pointer;
+    }
+    // Toggles
+    .glyphicon-chevron-left, .glyphicon-chevron-right, .fa-angle-left, .fa-angle-right, .icon-prev, .icon-next {
+        font-size: 14px;
+        width: auto;
+        height: auto;
+        margin-top: 0;
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        z-index: 5;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-left, .icon-prev {
+        margin-left: 0;
+    }
+
+    .glyphicon-chevron-right, .icon-next {
+        margin-right: 0;
+    }
+
+    .section-header & {
+        top: 0;
+        margin-top: 0;
+    }
+}
+
+.carousel-control-birght{
+	color: #FFF;
+	border-color: #FFF;
+	opacity: .6;
+
+	&:hover, &:focus{
+		color: #FFF;
+	    border-color: #FFF;
+		opacity: 1;
+	}
+}
+
+.carousel-control-middle{
+	&.left{
+		top: 50%;
+		left: 15px;
+	}
+
+	&.right{
+		top: 50%;
+		right: 15px;
+	}
+}
+
+.block-carousel {
+    .carousel {
+        padding-top: 75px;
+    }
+    .carousel-control {
+        background-color: $brand-third;
+        color: #fff;
+        bottom: auto;
+        top: 0;
+        left: 50%;
+
+        &.left {
+            margin-left: -61px;
+        }
+
+        &.right {
+            margin-right: -5px;
+        }
+    }
+}
+
+.carou-wrap {
+    .carousel-control {
+        bottom: auto;
+        top: 0;
+        right: 0;
+        margin-top: 0;
+        z-index: 9999;
+
+        &.left {
+            right: 61px;
+        }
+
+        &.right {
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.carousel {
+    &:hover {
+        .carousel-control {
+            display: block;
+        }
+    }
+}
+
+.carousel-indicators {
+    width: auto;
+    margin-left: 0;
+    left: auto;
+    right: 168px;
+    bottom: 0;
+}
+
+
+.carou-wrap {
+    position: relative;
+}
+
+@-webkit-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+@-moz-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+@keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+.scroll-btn {
+    margin-top: 50px;
+    display: block;
+}
+.scroll-btn > * {
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7f8c8d;
+    color: $brand-primary;
+    letter-spacing: 2px;
+}
+.scroll-btn > *:hover, .scroll-btn > *:focus, .scroll-btn > *.active {
+    color: $brand-primary;
+}
+.scroll-btn > *:hover, .scroll-btn > *:focus, .scroll-btn > *:active, .scroll-btn > *.active {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+    position: relative;
+    display: block;
+    width: 46px;
+    height: 73px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid $brand-primary;
+    border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: $brand-primary;
+    border-radius: 50%;
+    -webkit-animation: ani-mouse 4s linear infinite;
+    -moz-animation: ani-mouse 4s linear infinite;
+    animation: ani-mouse 4s linear infinite;
+}
+.has-transparent-header + .carousel {
+    &, .display-table {
+        height: 600px;
+    }
+
+    .carousel-caption {
+        padding-top: 100px;
+    }
+}

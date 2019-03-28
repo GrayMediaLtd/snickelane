@@ -1,0 +1,31 @@
+.iconbox-2-columns {
+    padding: 32px;
+    background-color: rgba(0,0,0,0.5);
+
+    color: #fff;
+
+    .fa {
+        color: #fff;
+    }
+
+    .iconbox-icon {
+        width: 75px;
+        float: left;
+    }
+
+    .iconbox-title {
+        color: #fff;
+
+        > a {
+            color: #fff;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .iconbox-detail {
+        margin-left: 75px;
+    }
+}

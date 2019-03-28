@@ -1,0 +1,221 @@
+.block-FlexBlock_WorkBox{
+	.row-compact{
+		img{
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+.workbox{
+    position: relative;
+    overflow: hidden;
+    display: block;
+
+	h3 {
+		font-weight: 900;
+	}
+
+    img {
+        transition: 0.2s ease-out;
+        -webkit-transition: 0.2s ease-out;
+        -moz-transition: 0.2s ease-out;
+        max-width: 100%;
+    }
+
+    &:hover img {
+        -ms-transform: scale(1.05); /* IE 9 */
+        -webkit-transform: scale(1.05); /* Safari */
+        transform: scale(1.05);
+    }
+
+    .detail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 ($spacer * 2);
+
+		* {
+            color: #fff;
+        }
+    }
+
+    .make-center {
+        display: table;
+        width: 100%;
+        height: 100%;
+
+        .center {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}
+
+// default workbox
+.workbox-default {
+	.detail{
+		text-align: center;
+	}
+}
+
+html.no-touch{
+	.workbox-default{
+		.detail {
+			cursor: pointer;
+			opacity: 0;
+
+			h3, p{
+				-webkit-transition: all 400ms;
+				-o-transition: all 400ms;
+				transition: all 400ms;
+			}
+
+			h3 {
+				-webkit-transform: translate(0, 25px);
+				-ms-transform: translate(0, 25px);
+				-o-transform: translate(0, 25px);
+				transform: translate(0, 25px);
+			}
+
+			p {
+				-webkit-transform: translate(0, -25px);
+				-ms-transform: translate(0, -25px);
+				-o-transform: translate(0, -25px);
+				transform: translate(0, -25px);
+			}
+
+			&:hover{
+				//background-color: rgba(87, 111, 158, 0.8);
+                background: #ff0000;
+				background: linear-gradient(45deg, #ff0000, #ff0052);
+				opacity: 1;
+
+				h3, p {
+					-webkit-transform: translate(0, 0);
+					-ms-transform: translate(0, 0);
+					-o-transform: translate(0, 0);
+					transform: translate(0, 0);
+				}
+			}
+		}
+	}
+}
+
+html.touch{
+	.workbox-default{
+		.detail {
+			background: #ff0000;
+			background: linear-gradient(45deg, #ff0000, #ff0052);
+			cursor: pointer;
+
+			h3, p {
+				-webkit-transform: translate(0, 0);
+				-ms-transform: translate(0, 0);
+				-o-transform: translate(0, 0);
+				transform: translate(0, 0);
+			}
+		}
+	}
+}
+
+// service box
+.servicebox {
+    position: relative;
+    text-align: center;
+	margin-bottom: 15px;
+
+    img {
+        max-width: 100%;
+    }
+
+	.fa{
+		color: $brand-third;
+	}
+
+    .servicebox-detail {
+        position: absolute;
+        left: 0;
+        bottom: 50%;
+        width: 100%;
+        -webkit-transform: translateY(50%);
+        -moz-transform: translateY(50%);
+        transform: translateY(50%);
+        -webkit-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        text-align: center;
+        z-index: 2;
+
+        .servicebox-top {
+            display: inline-block;
+            width: 166px;
+            height: 134px;
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 6px;
+            border: 2px solid #f0f0f0;
+            margin-bottom: 25px;
+        }
+
+        .servicebox-bottom {
+			display: none;
+        }
+    }
+
+    .servicebox-thumbnail {
+        z-index: 0;
+    }
+
+    &:hover {
+        &:after {
+            position: absolute;
+            background: transparent;
+            content: " ";
+            display: block;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            -webkit-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            background-color: $brand-third;
+            opacity: 0.5;
+        }
+
+        .servicebox-bottom {
+			display: block;
+        }
+    }
+}
+
+html.touch{
+	.servicebox .servicebox-detail .servicebox-bottom{
+		display: block;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.row-workbox{
+		> div{
+			&:not(:last-child){
+				margin-bottom: $spacer-y;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.workbox-case-study .row-workbox{
+		> div{
+			&:not(:last-child){
+				margin-bottom: $spacer-y;
+			}
+		}
+	}
+}

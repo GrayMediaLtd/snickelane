@@ -1,0 +1,17 @@
+SimpleListField:
+  Scenarios:
+    banner_height:
+      preload: true
+      heading: false
+      fields:
+        - type: 'dropdown'
+          name: 'screen'
+          label: 'Screen'
+          list:
+            543: 'Mobile'
+            767: 'Tablet'
+            991: 'Desktop'
+            9999: 'Large Desktop'
+        - type: 'text'
+          name: 'height'
+          label: 'Height (in pixel)'

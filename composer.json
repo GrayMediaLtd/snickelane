@@ -1,0 +1,46 @@
+{
+	"name": "silverstripe/installer",
+	"description": "The SilverStripe Framework Installer",
+	"require": {
+		"php": ">=5.3.3",
+		"silverstripe/cms": "3.6.x@stable",
+		"silverstripe/framework": "3.6.x@stable",
+		"silverstripe/reports": "3.6.x@stable",
+		"silverstripe/siteconfig": "3.6.x@stable",
+		"unclecheese/betterbuttons": "*",
+		"silverstripe-australia/gridfieldextensions": "*",
+		"axllent/silverstripe-version-truncator": "*",
+		"silverstripe/selectupload": "*",
+		"silverstripe/lumberjack": "*",
+		"bummzack/sortablefile": "*",
+		"silverstripe/userforms": "*",
+		"silverstripe/spamprotection": "*",
+		"silverstripe/widgets": "*",
+		"silverbusters/silverstripe-simplelistfield": "*",
+		"undefinedoffset/silverstripe-nocaptcha": "*",
+		"jonom/focuspoint": "*",
+		"silverstripe/blog": "*",
+		"tractorcow/silverstripe-colorpicker": "*",
+		"silverstripe/comments": "*",
+		"markguinn/silverstripe-gridfieldmultiselect": "*",
+		"silverstripe-australia/memberprofiles": "*",
+		"gdmedia/ss-auto-git-ignore": "^1.0",
+		"toastnz/flat-cms": "^1.1"
+	},
+	"require-dev": {
+		"phpunit/PHPUnit": "~3.7"
+	},
+	"extra": {
+		"branch-alias": {
+			"3.x-dev": "3.3.x-dev"
+		}
+	},
+	"config": {
+		"process-timeout": 600
+	},
+	"prefer-stable": true,
+	"minimum-stability": "dev",
+	"scripts": {
+	    "post-update-cmd": "GDM\\SSAutoGitIgnore\\UpdateScript::Go"
+	}
+}

@@ -1,0 +1,18 @@
+---
+Name: betterbuttons
+---
+BetterButtonsActions:
+  create:
+    BetterButton_Save: true
+    Group_SaveAnd: true
+    BetterButton_SaveAndClose: false
+    BetterButton_SaveAndNext: false
+    BetterButtonFrontendLinksAction: true
+    BetterButton_Delete: true
+  edit:
+    BetterButton_Save: true
+    Group_SaveAnd: true
+    BetterButton_SaveAndClose: false
+    BetterButton_SaveAndNext: false
+    BetterButtonFrontendLinksAction: true
+    BetterButton_Delete: true

@@ -1,0 +1,24 @@
+// Help page
+.ct-faq-header {
+    margin-bottom: $spacer;
+}
+
+.page-type-HelpPage{
+	.block-help-center{
+		padding-top: 0;
+		padding-bottom: 1.5rem;
+	}
+	
+	.help-article-lists{
+		&:not(.first){
+			margin-top: 2.5rem;
+		}
+	}
+}
+
+.page-type-HelpArticle{
+	.block-blog{
+		padding-top: 0;
+		padding-bottom: 1.5rem;
+	}
+}

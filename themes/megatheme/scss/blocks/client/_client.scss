@@ -1,0 +1,14 @@
+@import "client-regular";
+@import "client-strip";
+
+.client {
+	margin-bottom: $spacer-y / 2;
+	opacity: .8;
+	&:hover {
+		opacity: 1;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}

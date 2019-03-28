@@ -1,0 +1,122 @@
+// Custom Theme Settings
+//
+// Bootstrap overrides
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+// Brand colors
+$brand-first:     #FF0000;
+$brand-second:    rgb(81, 88, 117);
+$brand-third:     #000;
+$brand-fourth:    rgb(102, 151, 185);
+$brand-fifth:     rgb(136, 195, 216);
+$brand-yellow:    #ffed00;
+
+// Grayscale Colors
+$gray-dark:                 #bcbcbc;
+$gray:                      #e3e3e3;
+$gray-light:                #d4d4d4;
+$gray-lighter:              #eceeef; // Used for theme gray background
+$gray-lightest:             #F9F9F9;
+
+// border color
+$border-color: rgba(0,0,0,0.05);
+$hr-border-color: $border-color;
+$table-border-color: $border-color;
+$input-border-color: $border-color;
+$dropdown-border-color: $border-color;
+$nav-tabs-border-color: $border-color;
+$pagination-border-color: $border-color;
+$card-border-color: $border-color;
+$popover-border-color: $border-color;
+$modal-content-border-color: $border-color;
+$modal-header-border-color: $border-color;
+$thumbnail-border-color: $border-color;
+$pre-border-color: $border-color;
+$abbr-border-color: $border-color;
+$blockquote-border-color: $border-color;
+$custom-file-border-color: $border-color;
+
+// Body
+$body-color: #000;
+$font-family-base: 'Raleway', monospace;
+$font-family-sans-serif: 'Raleway', monospace;
+$line-height-base: 1.6875;
+
+// Headings
+$headings-color: #000;
+$headings-margin-bottom: .5rem;
+$headings-font-weight:   400 ;
+
+$font-size-h1: 3em;
+$font-size-h2: 2.25em;
+$font-size-h3: 1.75em;
+$font-size-h4: 1.125em;
+
+// Style anchor elements.
+$link-color:            $brand-third; //rgb(1,177,174);
+$link-hover-color:      darken($link-color, 15%) ;
+$link-hover-decoration: none;
+
+// Breadcrumbs
+$breadcrumb-active-color: $headings-color;
+
+
+// Buttons
+// For each of Bootstrap's buttons, define text, background and border color.
+$btn-padding-x:                  1rem ;
+$btn-padding-y:                  .5rem ;
+$btn-line-height:                1.25 ;
+
+$btn-primary-color:              #fff ;
+$btn-primary-bg:                 #FF0000;
+$btn-primary-border:             $btn-primary-bg ;
+
+$btn-secondary-color:            $gray-dark ;
+$btn-secondary-bg:               #fff ;
+$btn-secondary-border:           #ccc ;
+
+$btn-info-color:                 #fff ;
+$btn-info-bg:                    #5bc0de;
+$btn-info-border:                $btn-info-bg ;
+
+$btn-success-color:              #fff ;
+$btn-success-bg:                 #5cb85c;
+$btn-success-border:             $btn-success-bg ;
+
+$btn-warning-color:              #fff ;
+$btn-warning-bg:                 #f0ad4e;
+$btn-warning-border:             $btn-warning-bg ;
+
+$btn-danger-color:               #fff ;
+$btn-danger-bg:                  #d9534f;
+$btn-danger-border:              $btn-danger-bg ;
+
+$btn-link-disabled-color:        $gray-light ;
+
+$btn-padding-x-sm:               .5rem ;
+$btn-padding-y-sm:               .25rem ;
+
+$btn-padding-x-lg:               1.5rem ;
+$btn-padding-y-lg:               .75rem ;
+
+$btn-block-spacing-y:            .5rem ;
+$btn-toolbar-margin:             .5rem ;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:              0;
+$btn-border-radius-lg:           0;
+$btn-border-radius-sm:           0;
+
+// Form
+$input-border: #ccc;
+$input-color: lighten($body-color, 30%);
+
+// Navbar
+$navbar-light-color: #444;
+
+// Spacing
+$spacer: 2rem;
+
+// Map block
+$map-height: 450px;

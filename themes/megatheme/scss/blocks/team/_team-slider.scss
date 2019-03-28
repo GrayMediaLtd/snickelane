@@ -1,0 +1,12 @@
+.tm-slider {
+    .detail {
+        padding: $spacer;
+    }
+
+    .member-ccupation,
+    .member-name {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}

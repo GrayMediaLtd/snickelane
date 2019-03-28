@@ -1,0 +1,30 @@
+@import "contact-strip";
+@import "contact-map";
+@import "contact-form-full";
+@import "contact-form";
+
+.ct-form-full,
+.contact-form {
+    /* all */
+    .form-control::-webkit-input-placeholder {
+        text-transform: uppercase;
+    }
+    .form-control::-moz-placeholder {
+        text-transform: uppercase;
+    }
+    /* firefox 19+ */
+    .form-control:-ms-input-placeholder {
+        text-transform: uppercase;
+    }
+    /* ie */
+    .form-control:-moz-placeholder {
+        text-transform: uppercase;
+    }
+
+    .form-control {
+        background-color: $gray-lighter;
+        border-color: $gray-lighter;
+        padding: $input-padding-y-lg $input-padding-x-lg;
+        font-size: $font-size-sm;
+    }
+}

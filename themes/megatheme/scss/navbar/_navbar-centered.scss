@@ -1,0 +1,49 @@
+.navbar-centered {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    background-color: #fff;
+
+    & + .fake-navbar {
+        height: 72px;
+        display: block;
+    }
+
+	@include media-breakpoint-up(lg) {
+        padding-top: $spacer-y * 2;
+        padding-bottom: $spacer-y * 2;
+
+		.navbar-nav {
+			display: block;
+			width: 100%;
+			float: left;
+			text-align: center;
+
+            .nav-item {
+                float: none;
+                display: inline-block;
+            }
+		}
+
+		.navbar-brand {
+			text-align: center;
+			float: none;
+			display: block;
+
+			> img {
+				display: inline-block;
+			}
+		}
+
+        &.scrolled {
+			padding-top: $spacer-y / 2;
+			padding-bottom: $spacer-y / 2;
+			
+            .navbar-brand img {
+                max-height: 35px;
+            }
+		}
+		
+		& + .fake-navbar {
+			height: 160px;
+		}
+	}
+}
