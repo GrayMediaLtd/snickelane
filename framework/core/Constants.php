@@ -57,6 +57,8 @@ foreach ($dirsToCheck as $dir) {
 			//if the file exists, then we include it, set relevant vars and break out
 			if (file_exists($dir . DIRECTORY_SEPARATOR . $envFile)) {
 				define('SS_ENVIRONMENT_FILE', $dir . DIRECTORY_SEPARATOR . $envFile);
+				print("here");
+				exit;
 				include_once(SS_ENVIRONMENT_FILE);
 				//break out of BOTH loops because we found the $envFile
 				break(2);
