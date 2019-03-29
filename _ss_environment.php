@@ -1,8 +1,5 @@
 <?php
 
-print "horses";
-exit;
-
 define('SS_ENVIRONMENT_TYPE', 'live');
 
 define('SS_DATABASE_SERVER', '127.0.0.1');
