@@ -9,3 +9,4 @@ define('SS_DATABASE_NAME', 'snickellane');
 
 define('SS_DEFAULT_ADMIN_USERNAME', 'nzd');
 define('SS_DEFAULT_ADMIN_PASSWORD', 'logmeintoaservercmsplease007*');
+?>
