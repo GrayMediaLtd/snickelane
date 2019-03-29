@@ -1,6 +1,11 @@
 <?php
 
+
 define('SS_ENVIRONMENT_TYPE', 'live');
+
+
+print "horses";
+exit;
 
 define('SS_DATABASE_SERVER', '127.0.0.1');
 define('SS_DATABASE_USERNAME', 'forge');
