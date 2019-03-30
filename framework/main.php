@@ -14,6 +14,9 @@
  * @subpackage core
  */
 
+print("start");
+
+exit;
 if (version_compare(phpversion(), '5.3.3', '<')) {
 	header("HTTP/1.1 500 Server Error");
 	echo str_replace('$PHPVersion', phpversion(), file_get_contents("dev/install/php5-required.html"));
