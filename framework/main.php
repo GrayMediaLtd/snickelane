@@ -20,10 +20,6 @@ if (version_compare(phpversion(), '5.3.3', '<')) {
 	die();
 }
 
-print_r("cats");
-exit;
-
-
 /**
  * Main file that handles every page request.
  *
