@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - /bin/sh -c 'git pull origin master'
+    - /bin/sh -c 'git add .'
+    - /bin/sh -c 'git commit -m "Committing changes from cPanel"'
+    - /bin/sh -c 'git push origin master'
